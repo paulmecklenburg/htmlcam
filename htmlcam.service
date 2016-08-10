@@ -1,0 +1,11 @@
+# htmlcam.service
+[Unit]
+Description=start htmlcam after boot
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/htmlcam.py
+
+[Install]
+WantedBy=default.target
